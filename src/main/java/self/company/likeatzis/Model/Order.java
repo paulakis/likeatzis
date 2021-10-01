@@ -3,14 +3,16 @@ package self.company.likeatzis.Model;
 import lombok.Data;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.List;
 
 @Entity
 @Data
-public class Likeatzis extends Person{
-
+public class Order {
+    @Id
+    private long id;
     @OneToMany
-    private List<Product> products;
+    private List<OrderItem> orderItems;
 
 }
