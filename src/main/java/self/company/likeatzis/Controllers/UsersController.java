@@ -1,13 +1,12 @@
 package self.company.likeatzis.Controllers;
 
-import org.apache.catalina.User;
 import org.springframework.web.bind.annotation.*;
-import self.company.likeatzis.Model.dtos.UserCreationDto;
-import self.company.likeatzis.Model.dtos.UserInfoDto;
+import self.company.likeatzis.Model.dtos.user.UserCreationDto;
+import self.company.likeatzis.Model.dtos.user.UserInfoDto;
 
 @RestController
 @RequestMapping("/user")
-public class IndividualController {
+public class UsersController {
 
     @GetMapping
     @RequestMapping("/information/{id}")

@@ -1,4 +1,4 @@
-package self.company.likeatzis.Model.dtos;
+package self.company.likeatzis.Model.dtos.user;
 
 import lombok.Data;
 
