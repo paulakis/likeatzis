@@ -8,7 +8,7 @@ import self.company.likeatzis.Model.dtos.order.UpdateOrderDto;
 public class OrderController {
 
     @GetMapping
-    @RequestMapping("{id}")
+    @RequestMapping(value = "{id}")
     public void getOrder(@RequestParam("id") String id) {
 
     }
@@ -19,8 +19,9 @@ public class OrderController {
     }
 
     @PostMapping
-    @RequestMapping("{id}")
+    @RequestMapping(value = "{id}")
     public void updateOrder(@RequestParam("id") String id, @RequestBody UpdateOrderDto updateOrderDto) {
 
     }
+
 }
